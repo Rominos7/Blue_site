@@ -1,0 +1,14 @@
+@mixin font($color,$fonts,$size,$weigth) {
+    color:$color;
+    font-family: $fonts;
+    font-size: $size;
+    font-weight: $weigth;
+}
+
+@mixin flex($text-transform,$text-decoration,$align-items){
+    display:flex;
+    text-transform: $text-transform;
+    text-decoration: $text-decoration;
+    align-items:$align-items;
+
+}

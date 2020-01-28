@@ -1,0 +1,173 @@
+p, h1,h2,h3,h4,h5,h6,ul,ol{
+    margin:0;
+    padding: 0;
+}
+
+.header .row{
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+.header{
+    background: url(../../../img/Bg-Dark.png) $primary-1 center center no-repeat;
+
+}
+.header-2{
+    background-color: $primary-3;
+}
+
+.container p{
+    @include font($primary-4,$font-regular,20px,100);
+    /*
+    color:$primary-4;
+    font-family:$font-regular;
+    font-size:20px;
+    */
+}
+.section-1{
+
+    color:$primary-4;
+    font-family:$font-thin;
+    font-size:20px;
+}
+.header a{
+    color:$base-light;
+    font-family:$font-regular;
+    font-size:20px;
+    
+    @include flex(uppercase,none,center)
+    /*
+    text-transform: uppercase;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    */
+}
+
+.sprite{
+    background:url(../../../img/css_sprites.png);
+    display:inline-block;
+    margin-left:3px;
+}
+
+.login{
+    width:41px; height: 28px;
+    background-position: -10px -10px;
+}
+
+.chat{
+    width:51px; height: 30px;
+    background-position: -10px -55px;
+    
+}
+
+.burger::before{
+    content:'';
+    width: 65px;
+    height: 5px;
+    background-color: $base-light;
+    display:block;
+    position: absolute;
+    top:-15px;  
+}
+
+.burger::after{
+    content:'';
+    width: 65px;
+    height: 5px;
+    background-color: $base-light;
+    display:block;
+    position: absolute;
+    top: 15px;  
+}
+
+/***/
+
+.container-bottom{
+    height: 40px;
+}
+
+.containet-1 a{
+    color:$base-light;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-regular;
+    font-size:"20px";
+    /*display: inline-block;*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-2 .row{
+    align-items: center;
+    padding: 10px 0;  
+}
+
+.container-1 p{
+    color:$primary-4;
+    font-family:$font-regular;
+    font-size:16px;
+}
+.section-2{
+
+    color:$primary-4;
+    font-family:$font-thin;
+    font-size:16px;
+}
+
+.bottom-2{
+    text-align: right;
+}
+
+.bottom-3{
+    text-align: right;
+}
+
+.bottom-4{
+    text-align: right;
+}
+
+
+
+
+
+
+@media(max-width:1024px){
+    .row p{
+        font-size:18px;
+    }
+
+    .header a{
+        font-size:18px;
+    }
+    .chat{
+        width:41px; height: 28px;
+        background-position: -39px -17px;
+        background-size: 105%;
+    }
+    .chat-padding{
+        padding: 0;
+    }
+    .burger{
+        width: 65px;
+        height: 5px;
+        background-color: $base-light;
+        display:block;
+        position: relative;
+    }
+
+/**/
+    .container-bottom{
+     height: 60px;
+     }
+
+}
+
+@media(max-width:330px){
+    .container-bottom{
+        height: 80px;
+    }
+   
+}
