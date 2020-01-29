@@ -1,0 +1,85 @@
+.banner{
+   background-image: url(../../../img/bakc-logo-1.png);
+   height: 585px;
+
+   .inside-block img{
+       margin-top:35px;
+       
+
+    }
+    .figure-block{
+        margin-top:35px;
+        margin-bottom:35px;
+        filter: drop-shadow(5px 5px 3px grey);
+        
+
+        .figure-block-1-1{
+            background-color: $primary-4;
+            width: 600px;
+            height: 60px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .figure-block-1-1 h1{
+            @include font($primary-3,$font-bold,32px,500);
+            text-transform: uppercase;
+        }
+
+        .figure-block-1-1 span{
+            text-transform: lowercase;
+            margin-left:10px; 
+        }
+        
+    }
+    
+  .figure-block-1{
+      margin-bottom:10px;
+
+      h3{  
+        text-transform: uppercase;
+        @include font($base-dark,$font-medium,22px,400);
+    }
+    
+    span{
+        text-transform: lowercase;
+        margin-left:10px; 
+    }
+
+  }
+
+  .inside-block ul{
+      /*list-style-type: circle;*/
+      list-style-image: url(../../../img/dote-list-blue.png);
+      li{
+          margin-top:15px;
+          @include font($base-dark,'Arial',15px,100);
+      }
+      
+  }
+    
+    .button-container{
+        margin-top:35px;
+        width: 530px;
+        height: 85px;
+
+        button{
+            width: 230px;
+            height: 35px;
+            margin-right: 30px;
+            margin-top: 15px;
+            @include font($primary-3,$font-regular,18px,100);
+        }
+    }
+
+}
+
+
+
+@media(max-width:1024px){
+    .banner{
+        background-image: url(../../../img/bakc-logo-2.png);
+        height: 585px;
+    }
+}
