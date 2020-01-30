@@ -14,27 +14,38 @@
         
 
         .figure-block-1-1{
-            background-color: $primary-4;
+            // background-color: $primary-4;
             width: 600px;
             height: 60px;
-            display:flex;
-            justify-content: center;
-            align-items: center;
+            //display:flex;
+            //justify-content: center;
+            //align-items: center;
         }
 
         .figure-block-1-1 h1{
             @include font($primary-3,$font-bold,32px,500);
             text-transform: uppercase;
+            background-color: $primary-4;
+            padding: 15px;
+            height: 64px;
         }
 
         .figure-block-1-1 span{
             text-transform: lowercase;
             margin-left:10px; 
         }
+        .d7 {
+            width: 0; 
+            height: 0;
+            border-top: 30px solid  $primary-4;
+            border-right: 30px solid transparent;
+            
+            }
         
     }
     
   .figure-block-1{
+      margin-top:60px;
       margin-bottom:10px;
 
       h3{  
@@ -70,6 +81,8 @@
             margin-right: 30px;
             margin-top: 15px;
             @include font($primary-3,$font-regular,18px,100);
+            background:none;
+            border:solid 1px $primary-3;
         }
     }
 

@@ -1,0 +1,157 @@
+.main-1{
+  height: 290px;
+  background: url(../../../img/Bg-dark-2.png) $primary-2 center center no-repeat;
+
+}
+
+.figure-block-1-1{
+    width:1140px;
+    height: 65px;
+    margin-top:30px;
+    //filter: drop-shadow(5px 5px 3px grey);
+
+    .figure-1{
+        
+        display:flex;
+        justify-content: flex-start;
+        
+        background-color: $primary-4;
+        .title-2{         
+            width: 395px;
+            height: 50px;
+            color:$order-color;
+            @include font($order-color,$font-regular,35px,100);
+            text-transform: uppercase;
+            padding-top: 0px;
+            .word-1{
+                
+                @include font($order-color,$font-bold,50px,100);  
+            }
+            .word-2{
+                margin-left: 15px;
+                @include font($primary-3,$font-regular,20px,300);  
+            }
+             
+        }
+
+        .title-1{
+            width: 770px;
+            height: 50px;
+            //background-color: $primary-4;
+            @include font($primary-3,$font-bold,28px,400);
+                text-transform: uppercase;
+            padding: 5px;
+            padding-left: 20px;
+            span{
+                margin-left: 10px;
+                text-transform: lowercase;
+                @include font($primary-3,$font-bold,24px,100); 
+            } 
+        }
+
+          .d28 {
+            height: 6px; 
+            width: 53px; 
+            margin-top: 22px;
+            //display:inline-block;
+            position: relative;
+            transform: rotate(270deg);
+            }
+            .d28:before, 
+            .d28:after {
+            content: "";
+            height: 100%; 
+            width: 50%;
+            position: absolute; 
+            top: 0;
+            background: $primary-2;//$primary-4;
+            }
+            .d28:before {
+            left: 0;
+            transform: skew(0deg, 30deg);
+            //transform: rotate(270deg);
+            }
+            .d28:after {
+            right: 0;
+            transform: skew(0deg, -30deg);
+            //transform: rotate(270deg);
+            }
+         
+    }
+    
+    .d7 {
+        width: 0; 
+        height: 0;
+        border-top: 20px solid  $primary-4;
+        border-right: 20px solid transparent;
+        
+        }
+
+
+    
+    
+}
+
+.container-forms{
+    //margin-top: 20px;
+    height: 150px;
+
+    article{
+        float: left;
+        margin-right: 50px;
+        margin-top: 20px;
+        width: 310px;
+
+        h3{
+            @include font($base-light,$font-regular,16px,100);
+            text-transform: uppercase; 
+        }
+        /*
+        p{
+            height: 40px;
+        }
+        */
+        .text-tot-pr{
+            text-transform: uppercase;
+            @include font($base-light,$font-regular,16px,100);
+           
+            .price-text{
+                text-transform: uppercase;
+                @include font($base-light,$font-regular,48px,100); 
+            }
+
+            .price-text-1{
+                margin-left: 30px;
+                text-transform: uppercase;
+                @include font($base-light,$font-regular,25px,200);
+            }
+        }
+        
+    }
+
+    
+    .figure-block-2-1{
+        //margin-top:35px;
+        //margin-bottom:35px;
+        //filter: drop-shadow(5px 5px 3px grey);
+
+        .figure-block-2-2{
+            width: 310px;
+            height: 40px;
+
+            h2{
+                @include font($base-light,$font-regular,26px,100);
+                text-transform: uppercase;
+                text-align: center;
+                background-color: $order-color;
+            }
+            .d7-1 {
+                width: 0; 
+                height: 0;
+                border-top: 15px solid  $order-color;
+                border-right: 20px solid transparent;
+                
+                }
+        }
+    }
+}
