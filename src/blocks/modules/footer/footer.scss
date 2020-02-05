@@ -1,0 +1,69 @@
+footer{
+    height: 425px;
+    background: url(../../../img/Bg-dark-4.png) $primary-1 center center no-repeat;
+}
+
+
+.footter-list{
+    margin-top:35px;
+    article{
+        float:left;
+        margin-right: 20px;
+        
+        ul{
+            
+            list-style-type: none;
+            @include font($base-light,'Arial',16px,100);
+            li{
+                line-height: 23px;
+            }
+        }
+
+        
+
+    }
+    
+    .line-line{
+        margin-top:260px;
+        
+        hr{
+            color:$base-light;
+            position: relative;       
+        }
+
+        img{
+           position: absolute;
+           bottom:23%;
+           right:50%;       
+        }
+    
+    }
+    
+
+
+
+   
+}
+
+.final-list-down{
+    margin-top:40px;
+    list-style-type:none;
+    text-transform: uppercase;
+    @include font($base-light,$font-medium ,16px,100);
+    
+    li{
+        float:left;
+        margin-right: 10px;
+    }
+
+    span{
+        margin-left: 10px;
+    }
+}
+
+h6{
+    @include font($base-light,'Arial',16px,100);
+    margin: 0 auto;
+    margin-top: 25px;
+
+}

@@ -365,3 +365,239 @@
         @include font($base-light,'Arial',24px,400);
     }
 }
+
+/*-----------------How it works ---------------*/
+
+
+.how-it-works{
+    height: 720px;
+    //background: url(../../../img/Bg-dark-3.png) $primary-3 center center no-repeat;
+}
+
+.figure-block-6-1{
+    margin-top:35px;
+    margin-bottom:35px;
+    filter: drop-shadow(5px 5px 3px grey);
+    
+
+    .figure-block-6-2{
+        background-color: $primary-4;
+        width: 1140px;
+        height: 50px;
+        //display:flex;
+        //justify-content: center;
+        //align-items: center;
+        h2{
+            @include font($primary-3,$font-bold,28px,400);
+            text-transform: uppercase;
+            text-align: center;
+            background-color: $primary-4;
+            padding: 15px;
+            height: 64px;
+        }
+
+        span{
+            text-transform: lowercase;
+            margin-left:10px; 
+        }
+    
+        .d7 {
+            width: 0; 
+            height: 0;
+            border-top: 30px solid  $primary-4;
+            border-right: 30px solid transparent;
+            
+            }
+    
+    }   
+    
+}
+
+
+.drop-menu{
+    height: 420px;
+    width: 1200px;
+    margin-top:25px;
+    
+    
+    
+    article{
+        width: 530px;
+        height: 420px;
+        
+        float:left;
+        margin-right: 10px;
+
+        .drop-menu-list{
+            list-style-type: none;
+            
+        
+        li{
+            //display:flex;
+            //align-items: center;
+            //justify-content: center;  
+            height: 70px;
+            border-bottom: solid 2px $primary-4;
+            @include font($primary-3,$font-medium,16px,200);
+            text-transform: uppercase;
+            
+            h4{
+                display:flex;
+                align-items: center;
+                position: relative;
+            }
+
+            
+
+            .drop-list-number{
+                @include font($primary-4,$font-bold,60px,400);
+                //float:left;
+                margin-right: 10px;
+              
+            }
+
+            .drop-list-head{
+                margin-left: 5px;
+                text-transform: lowercase;
+            }
+
+            h4:hover{
+                @include font($base-light,$font-medium,20px,200);
+                background-color: $primary-2;
+                
+            }
+
+            h4:hover .d6{  
+                    display:block;
+                    position: absolute;
+                    right: -6.7%;
+                    width: 0; 
+                    height: 0;
+                    border-top: 36.5px solid transparent;
+                    border-left: 35px solid $primary-2;
+                    border-bottom: 36.5px solid transparent;
+                    
+            }
+
+
+            .list-number-2:hover article>.list-block-2{
+                display:block;
+            } 
+           
+        }
+
+    }
+
+    .list-block{
+        //display:flex;
+        //justify-content: center;
+        //align-items: flex-start;
+        text-align: center;
+        
+        h5{
+            margin-top:20px;
+            @include font($primary-3,'Arrial',18px,100);
+
+        }
+        p{
+            margin-top:20px;
+            margin-left:50px;
+            text-align: justify;
+            width: 420px;
+            @include font($base-dark,'Arrial',18px,100);
+        }
+    }
+
+    .list-block-1{
+        display:block;
+    }
+
+    .list-block-2{
+        display:none;
+    }
+
+    .list-block-3{
+        display:none;
+    }
+
+    .list-block-4{
+        display:none;
+    }
+
+    .list-block-5{
+        display:none;
+    }
+
+    .list-block-6{
+        display:none;
+    }
+
+}
+
+}
+
+
+.figure-block-7-1{
+    
+    margin-top:40px;
+    //height: 200px;
+    
+    //margin-bottom:35px;
+    //filter: drop-shadow(5px 5px 3px grey);
+
+    .figure-block-7-2{
+        width: 310px;
+        
+
+        h2{
+            @include font($base-light,$font-regular,26px,100);
+            text-transform: uppercase;
+            text-align: center;
+            background-color: $order-color;
+        }
+        .d-1 {
+            width: 0; 
+            height: 0;
+            border-top: 15px solid  $order-color;
+            border-right: 20px solid transparent;
+            
+            }
+    }
+}
+
+
+.row-of-icons{
+    margin-top:50px;
+    height: 70px;
+    background-color: $primary-4;
+    
+    .row-icons{
+           display:flex;
+           align-items: center;
+           //justify-content: space-between;
+           height: 70px;
+            article{
+            width: 550px;
+            float: left;
+            margin-right: 20px;
+        }
+    
+        .icons-1{           
+            img{
+                width:100%;
+            }
+        }
+       
+        
+        .icons-2{          
+            img{
+                padding-left: 170px;
+            }
+        }
+           
+    }
+       
+}
+
+
+

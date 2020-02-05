@@ -17,6 +17,26 @@ p, h1,h2,h3,h4,h5,h6,ul,ol{
     background-color: $primary-3;
 }
 
+
+.header-list{
+    list-style-type:none;
+    text-transform: uppercase;
+    @include font($base-light,$font-regular,20px,100);
+    
+    li{
+        float:left;
+        margin-right: 10px;
+    }
+    li:hover{
+        background-color: $primary-4;
+        color:$primary-3;
+    }
+
+    span{
+        margin-left: 10px;
+    }
+}
+
 .container p{
     @include font($primary-4,$font-regular,20px,100);
     /*
