@@ -22,19 +22,28 @@ p, h1,h2,h3,h4,h5,h6,ul,ol{
     list-style-type:none;
     text-transform: uppercase;
     @include font($base-light,$font-regular,20px,100);
+    margin-left: 100px;
     
-    li{
-        float:left;
-        margin-right: 10px;
-    }
-    li:hover{
-        background-color: $primary-4;
-        color:$primary-3;
-    }
+   
+        
+        li{
+            float:left;
+            margin-right: 10px;
+            
+        }
+        li:hover{
+            background-color: $primary-4;
+            color:$primary-3;
+        }
 
-    span{
-        margin-left: 10px;
-    }
+        span{
+            margin-left: 10px;
+        }
+
+
+    
+    
+        
 }
 
 .container p{
@@ -185,9 +194,3 @@ p, h1,h2,h3,h4,h5,h6,ul,ol{
 
 }
 
-@media(max-width:330px){
-    .container-bottom{
-        height: 80px;
-    }
-   
-}

@@ -90,9 +90,180 @@
 
 
 
-@media(max-width:1024px){
+@media(max-width:940px){
     .banner{
-        background-image: url(../../../img/bakc-logo-2.png);
+        background-image: url(../../../img/bakc-logo-1.png);
         height: 585px;
+        width: 940px;
     }
 }
+
+@media(max-width:320px){
+    .banner{
+        height: 670px;
+        background: none;
+
+        .figure-block{
+            margin:-15px;
+            filter: drop-shadow(5px 5px 3px grey);
+
+            .figure-block-1-1{
+                
+                width: 290px;
+                height: 60px;
+                
+            }
+
+            .figure-block-1-1 h1{
+                @include font($primary-3,$font-bold,22px,500);
+                text-transform: uppercase;
+                background-color: $primary-4;
+                //padding: 15px;
+                height: 64px;
+                padding-top: 5px;
+                padding-left: 15px;
+                padding-right: 55px;
+
+                .d7 {
+                    width: 0; 
+                    height: 0;
+                    border-top: 30px solid  $primary-4;
+                    border-right: 30px solid transparent;
+                    
+                    }
+            }
+
+        }
+    
+        .figure-block-1{
+            margin-top:50px;
+            margin-bottom:10px;
+      
+            h3{  
+              text-transform: uppercase;
+              
+              @include font($base-dark,$font-medium,18px,500);
+            }
+          
+          span{
+              text-transform: lowercase;
+              margin-left:10px; 
+            }
+      
+        }
+      
+        ul.list-small{
+            list-style-image: url(../../../img/dote-list-blue.png);
+            li{
+                margin-top:15px;
+                @include font($base-dark,'Arial',15px,100);
+            }
+            
+        }
+    
+        .button-container{
+            margin:0 auto;
+            margin-top: 50px;
+            margin-left:20px;
+            width: 290px;
+            height: 200px;
+        }
+
+    
+    }
+
+    .figure-block-off{
+        margin:-15px;
+        margin-top:15px;
+        filter: drop-shadow(5px 5px 3px grey);
+
+        .figure-block-1-1-off{
+            
+            width: 290px;
+            height: 25px;
+            @include font($order-color,$font-regular,35px,100);
+            text-transform: uppercase;
+            
+            .word-1{
+                
+                @include font($order-color,$font-bold,32px,100);  
+            }
+            .word-2{
+                //margin-left: 2px;
+                @include font($order-color,$font-regular,26px,300);  
+            }
+            .word-3{
+                //margin-left: 2px;
+                @include font($order-color,$font-regular,26px,400);  
+            }
+            .word-4{
+                //margin-left: 2px;
+                @include font($primary-3,$font-regular,18px,300);  
+            }
+            
+            h2{
+                @include font($primary-3,$font-bold,22px,500);
+                text-transform: uppercase;
+                background-color: $primary-4;
+                //padding: 15px;
+                height: 64px;
+                padding-top: 5px;
+                padding-left: 15px;
+                padding-right: 55px;
+    
+                
+            } 
+            .d7-off {
+                width: 0; 
+                height: 0;
+                border-top: 20px solid  $primary-4;
+                border-right: 20px solid transparent;
+                
+                }
+        
+        }   
+    }
+
+    
+
+   
+}
+
+
+/*
+.figure-block{
+    margin-top:35px;
+    margin-bottom:35px;
+    filter: drop-shadow(5px 5px 3px grey);
+    
+
+    .figure-block-1-1{
+        // background-color: $primary-4;
+        width: 600px;
+        height: 60px;
+        //display:flex;
+        //justify-content: center;
+        //align-items: center;
+    }
+
+    .figure-block-1-1 h1{
+        @include font($primary-3,$font-bold,32px,500);
+        text-transform: uppercase;
+        background-color: $primary-4;
+        padding: 15px;
+        height: 64px;
+    }
+
+    .figure-block-1-1 span{
+        text-transform: lowercase;
+        margin-left:10px; 
+    }
+    .d7 {
+        width: 0; 
+        height: 0;
+        border-top: 30px solid  $primary-4;
+        border-right: 30px solid transparent;
+        
+        }
+    
+}*/

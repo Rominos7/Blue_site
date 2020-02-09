@@ -12,3 +12,46 @@
     align-items:$align-items;
 
 }
+
+@mixin chose-block-div(){
+    text-align: center;
+                h4{
+                    padding-top: 25px;
+                    height: 60px;
+                    width: 255px;
+                    @include font($primary-3,$font-medium,18px,100);
+                    text-transform: uppercase;
+                }
+        
+                span{
+                    text-transform: lowercase; 
+                }
+        
+                .p-1{
+                    margin-top: 20px;
+                    width: 260px;
+                    @include font($base-dark,'Arial',14px,500);
+                    text-align: justify;
+                    //height: 215px;
+                }
+                
+                ul{
+                    margin-top: 5px;
+                    width: 260px;
+                    @include font($base-dark,'Arial',14px,500);
+                    text-align: justify;
+                }
+        
+                button{
+                    width: 120px;
+                    height: 35px;
+                    background: none;
+                    background-color: $primary-1;
+                    border: none;
+                    @include font($base-light,$font-regular,16px,100);
+                    text-transform: uppercase;
+                    
+                }
+
+}
+

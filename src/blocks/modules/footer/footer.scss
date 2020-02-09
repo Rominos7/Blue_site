@@ -1,5 +1,5 @@
 footer{
-    height: 425px;
+    //height: 425px;
     background: url(../../../img/Bg-dark-4.png) $primary-1 center center no-repeat;
 }
 
@@ -65,5 +65,108 @@ h6{
     @include font($base-light,'Arial',16px,100);
     margin: 0 auto;
     margin-top: 25px;
+
+}
+
+
+
+@media(max-width:940px){
+
+
+    .footter-list{
+        margin-top:35px;
+        width: 850px;
+        article{
+            float:left;
+            margin-right: 5px;
+            
+            ul{
+                
+                list-style-type: none;
+                @include font($base-light,'Arial',11px,100);
+                li{
+                    line-height: 23px;
+                }
+            }
+    
+        }
+        
+        .line-line{
+            margin-top:260px;
+            
+            hr{
+                color:$base-light;
+                position: relative;       
+            }
+    
+            img{
+               position: absolute;
+               bottom:26%;
+               right:48%;       
+            }
+        
+        }
+   
+    }
+
+
+    .final-list-down{
+        margin-top:40px;
+        list-style-type:none;
+        text-transform: uppercase;
+        @include font($base-light,$font-medium ,16px,100);
+        
+        li{
+            float:left;
+            margin-right: 10px;
+        }
+    
+        span{
+            margin-left: 10px;
+        }
+    }
+    
+    h6{
+        @include font($base-light,'Arial',16px,100);
+        margin: 0 auto;
+        margin-top: 25px;
+    
+    }
+
+
+
+
+
+}
+
+
+
+
+
+@media(max-width:320px){
+   .footer-down{
+
+    ul{
+        
+        text-transform: uppercase;
+        list-style-type: none;
+        text-decoration: underline;
+        @include font($base-light,$font-medium ,18px,100);
+
+        li{
+            margin-top:20px;
+        }
+    }
+
+    h6{
+        margin:0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+     
+   }
+
+
 
 }
